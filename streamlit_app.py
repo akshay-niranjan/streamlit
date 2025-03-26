@@ -3,7 +3,7 @@ import pickle
 import requests
 
 movies = pickle.load(open('movies.pkl','rb'))
-#similarity = pickle.load(open('similarity.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 movies_title = movies['title'].values
 
@@ -24,10 +24,10 @@ def recommend(movie):
 
         recommended_movies.append(movies.iloc[i[0]].title)
 
-#         # fetch poster through api
-#         #recommended_movies_posters.append(fetch_posters(movie_id))
+        # fetch poster through api
+        #recommended_movies_posters.append(fetch_posters(movie_id))
 
-    # return recommended_movies#,recommended_movies_posters
+    return recommended_movies#,recommended_movies_posters
 
 st.title('🎬🍿Movie Recommender System')
 
@@ -56,5 +56,5 @@ if st.button('Recommend'):
        # st.image(posters[3])
     with col5:
         st.header(names[4])
-       st.image(posters[4])
+       # st.image(posters[4])
     
