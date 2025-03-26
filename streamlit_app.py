@@ -29,7 +29,7 @@ import streamlit as st
 
     # return recommended_movies#,recommended_movies_posters
 
-st.title('Movie Recommender System')
+st.title('🎬🍿Movie Recommender System')
 
 # selected_movie_name = st.selectbox(
 #     'Search movie',
