@@ -23,11 +23,9 @@ def recommend(movie):
         movie_id = movies.iloc[i[0]].movie_id
 
         recommended_movies.append(movies.iloc[i[0]].title)
-
-        # fetch poster through api
         #recommended_movies_posters.append(fetch_posters(movie_id))
 
-    return recommended_movies#,recommended_movies_posters
+    return recommended_movies #,recommended_movies_posters
 
 st.title('🎬🍿Movie Recommender System')
 
